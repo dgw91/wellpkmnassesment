@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="sHN-uO-z9U" customClass="PokemonTableViewCell" customModule="WellPokemonAssesment_Wilde" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sHN-uO-z9U" id="pgc-QZ-0ux">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2if-Y8-JYz">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="99"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="boc-MJ-cZl">
+                        <rect key="frame" x="96" y="8" width="284" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ig2-uv-goa">
+                        <rect key="frame" x="96" y="29" width="284" height="71"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ig2-uv-goa" firstAttribute="leading" secondItem="2if-Y8-JYz" secondAttribute="trailing" id="4tP-bz-blU"/>
+                    <constraint firstAttribute="bottom" secondItem="2if-Y8-JYz" secondAttribute="bottom" constant="10" id="EEP-vS-vzM"/>
+                    <constraint firstItem="2if-Y8-JYz" firstAttribute="leading" secondItem="pgc-QZ-0ux" secondAttribute="leading" id="SzM-T7-Y0h"/>
+                    <constraint firstItem="boc-MJ-cZl" firstAttribute="leading" secondItem="2if-Y8-JYz" secondAttribute="trailing" id="Y47-8M-GqE"/>
+                    <constraint firstItem="2if-Y8-JYz" firstAttribute="centerY" secondItem="pgc-QZ-0ux" secondAttribute="centerY" constant="-5" id="Znq-JF-rk7"/>
+                    <constraint firstItem="boc-MJ-cZl" firstAttribute="top" secondItem="2if-Y8-JYz" secondAttribute="top" constant="8" id="jwb-Am-LTc"/>
+                    <constraint firstItem="ig2-uv-goa" firstAttribute="bottom" secondItem="2if-Y8-JYz" secondAttribute="bottom" constant="1" id="rHb-2t-axl"/>
+                    <constraint firstItem="2if-Y8-JYz" firstAttribute="top" secondItem="pgc-QZ-0ux" secondAttribute="top" id="vbZ-KK-3Ti"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pokemonDescription" destination="ig2-uv-goa" id="EHd-zz-iru"/>
+                <outlet property="pokemonImage" destination="2if-Y8-JYz" id="bTH-eW-F67"/>
+                <outlet property="pokemonName" destination="boc-MJ-cZl" id="1av-yV-Oht"/>
+            </connections>
+            <point key="canvasLocation" x="-544.27480916030527" y="-651.4084507042254"/>
+        </tableViewCell>
+    </objects>
+</document>
