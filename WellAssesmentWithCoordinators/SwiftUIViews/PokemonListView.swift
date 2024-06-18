@@ -38,8 +38,9 @@ struct PokemonListView: View {
                     }
                     .buttonStyle(.bordered)
                     .opacity(0.8)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: Alignment.topTrailing)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: Alignment.bottomLeading)
                     .padding()
+                    
                 }
             }
             .navigationTitle("Pokémon")

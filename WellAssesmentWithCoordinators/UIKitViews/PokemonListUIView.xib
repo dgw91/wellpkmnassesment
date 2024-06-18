@@ -25,9 +25,8 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RZg-4R-sSc">
-                    <rect key="frame" x="223" y="107" width="154" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-4R-sSc">
+                    <rect key="frame" x="0.0" y="705" width="154" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Switch to SwiftUI"/>
                     <connections>
@@ -37,6 +36,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="X8n-X3-AXp"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9e6-fT-sxP" firstAttribute="leading" secondItem="RZg-4R-sSc" secondAttribute="trailing" constant="-154" id="Pt9-tQ-IT0"/>
+                <constraint firstItem="RZg-4R-sSc" firstAttribute="top" secondItem="9e6-fT-sxP" secondAttribute="bottom" constant="-147" id="fdq-dq-L3d"/>
+            </constraints>
             <point key="canvasLocation" x="-210" y="-643"/>
         </view>
     </objects>
